@@ -16,6 +16,7 @@ public class ArrayMethods3 {
 		}
 		else
 		{
+
 			//int index = 0;
 			int j = list1[0];
 			int k = 1; 
@@ -43,9 +44,28 @@ public class ArrayMethods3 {
 		arr[j] =  temp;
 	}
 	
-	public static void selectionSort(double[] list1)
+	public static void selectionSort(int[] list1)
 	{
-		
+		for(int i = 0; i<list1.length-1; i++)
+		{
+			int num = 0; 
+			for(int j = i + 1; j<list1.length; j++)
+			{
+			if(list1[index] < list1[i])
+			{
+				index++;
+				
+			}
+			else
+			{
+				num = i;
+			}				
+		}
+	
+
+		swap(list1, index, num);
+		}
+		printArr(list1);
 	}
 	
 	public static void bubbleSort(String[] list1)
